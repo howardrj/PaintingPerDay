@@ -82,7 +82,7 @@ h1 {
     font-weight: bold;
 }
 
-#painting_author {
+#painting_artist {
     font-size: 30px;
     font-weight: bold;
 }
@@ -93,7 +93,8 @@ h1 {
     font-weight: bold;
 }
 
-#painting_lines {
+#painting_date_selected {
+    padding: 2px;
     font-size: 18px;
-    padding-top: 30px;
+    font-weight: bold;
 }

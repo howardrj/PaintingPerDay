@@ -27,18 +27,23 @@
         </div>
 
         <table id="painting_table">
-            TODO ...
             {% if painting %}
             <span id="painting_id" data-id="{{ painting.id }}"> </span>
             <span id="painting_artsy_id" data-id="{{ painting.artsy_id }}"> </span>
             <tr>
-                <td id="painting_title"> </td>
+                <td id="painting_title"> {{ painting.title }} </td>
             </tr>
             <tr>
-                <td id="painting_artist"> </td>
+                <td id="painting_artist"> by {{ painting.artist }} </td>
             </tr>
             <tr>
-                <td id="painting_date"> </td>
+                <td id="painting_date"> {{ painting.date }} </td>
+            </tr>
+            <tr>
+                <td id="painting_date_selected"> {{ painting.date_selected }} </td>
+            </tr>
+            <tr>
+                <td id="painting_image"> </td>
             </tr>
             {% endif %}
         </table>
