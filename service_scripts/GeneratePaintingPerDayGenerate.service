@@ -1,0 +1,16 @@
+[Unit]
+Description=Generate Painting per Day
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=var/www/Personal-Website
+ExecStart=/usr/bin/python var/www/Personal-Website/manage.py generate_painting_per_day
+User=root
+Group=root
+Restart=always
+RestartSec=1
+StartLimitBurst=0
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,99 @@
+/********/
+/* Body */
+/********/
+
+body {
+    margin: 0;
+    padding: 0 30px;
+    width: auto;
+    height: auto;
+}
+
+/**********/
+/* Header */
+/**********/
+h1 {
+    font-family: "Oswald";
+    font-size: 80px;
+    margin-bottom: 50px;
+    position: relative;
+    top: -20px;
+}
+
+
+/**************************/
+/* Painting Arrow Buttons */
+/**************************/
+#painting_arrows_container {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.painting_arrow {
+    font-size: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    outline: none;
+    background-color: transparent;
+    border: 2px solid black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.painting_arrow_hoverable
+{
+    background-color: transparent;
+    color: black;
+}
+
+.painting_arrow_hoverable:hover {
+    cursor: hand;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+
+.painting_arrow_not_hoverable {
+    background-color: transparent;
+    color: grey;
+    pointer-events: none;
+}
+
+/**************/
+/* painting Table */
+/**************/
+#painting_table {
+    font-family: "Oswald";
+    font-size: 40px;
+    position: relative;
+    margin: 30px auto;
+    padding: 50px;
+    border: 2px solid black;
+    white-space: pre-line;
+    max-width: 60%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#painting_table td {
+    text-align: center;
+}
+
+#painting_title {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#painting_author {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#painting_date {
+    padding: 2px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#painting_lines {
+    font-size: 18px;
+    padding-top: 30px;
+}

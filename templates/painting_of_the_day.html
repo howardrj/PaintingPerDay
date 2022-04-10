@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html>
+    <head>
+        <title> Painting per Day </title>
+        <link rel="stylesheet" type="text/css" href="{% static "css/painting_per_day.css" %}">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/> 
+        <script type="text/javascript" src="{% static "javascript/painting_per_day.js" %}" defer> </script>
+    </head>
+
+    <body>
+
+        <h1 align="center"> Painting per Day </h1>
+
+        <div id="painting_arrows_container">
+
+            <button id="prev_painting_arrow" class="painting_arrow painting_arrow_hoverable" title="Click to show previous painting">
+        	    <i class="fa fa-arrow-left"></i> 
+            </button>
+
+            <button id="next_painting_arrow" class="painting_arrow painting_arrow_not_hoverable" title="Click to show next painting">
+        	    <i class="fa fa-arrow-right"></i> 
+            </button>
+        </div>
+
+        <table id="painting_table">
+            TODO ...
+            {% if painting %}
+            <span id="painting_id" data-id="{{ painting.id }}"> </span>
+            <span id="painting_artsy_id" data-id="{{ painting.artsy_id }}"> </span>
+            <tr>
+                <td id="painting_title"> </td>
+            </tr>
+            <tr>
+                <td id="painting_artist"> </td>
+            </tr>
+            <tr>
+                <td id="painting_date"> </td>
+            </tr>
+            {% endif %}
+        </table>
+
+    </body>
+
+</html>
